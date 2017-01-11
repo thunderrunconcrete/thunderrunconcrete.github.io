@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html ng-app="simpleSite">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-		<meta name="description" content="Get all types of rock and dirt - Serving Carlsbad and all of South East New Mexico and South West Texas. Call: (575) 200-1548">
+		<meta name="description" content="Get all types of rock and dirt - Serving Carlsbad and all of South East New Mexico and South West Texas">
 		<meta name="keywords" content="rock, basecourse, dirt, sand, gravel, agragate">
 
 		<title>Thunder Run Quarry</title>
@@ -48,7 +49,8 @@
 				<div class="collapse navbar-collapse" id="navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#header" class="scroll">Home</a></li>
-						<li><a href="#materials" class="scroll">Materials</a></li>
+						<li><a href="/concrete">Concrete</a></li>
+						<!--<li><a href="#materials" class="scroll">Materials</a></li>-->
 						<li><a href="#services" class="scroll">Services</a></li>
 						<li><a href="#contact" class="scroll">Contact</a></li>
 					</ul>
@@ -73,7 +75,7 @@
 							<!-- TICKER END -->
 							<p>Large or small, we deliver all!</p>
 							<br>
-							<a href="#services" class="btn btn-transparent scroll"><strong>LEARN MORE</strong></a>
+							<!--<a href="/concrete" class="btn btn-transparent"><strong>CONCRETE</strong></a>-->
 							<a href="#materials" class="btn btn-link btn-white scroll">Get Rocks <i class="fa fa-angle-right"></i></a>
 						</div>
 					</div>
@@ -106,10 +108,10 @@
 					<!-- WORK IMAGES START -->
 					<div class="row">
 						<ul id="gallery">
-							<div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="material in list | filter: rockType">
+							<div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="material in list">
 								<div class="thumbnail">
-									<h1>{{material.name}}</h1>
-									<img ng-src="{{material.img.src}}" alt="{{material.name}}" title="{{material.name}}">
+									<h1>{{material.title}}</h1>
+									<img ng-src="{{Imagic(material.image)}}" alt="{{material.title}}" title="{{material.title}}">
 									<!--<h2>{{material.price | currency}} / Ton</h2>-->
 								</div>
 							</div>
@@ -147,7 +149,8 @@
 							<ul class="list-unstyled">
 								<li>We deliver both Large and Small loads.</li>
 								<li>Call us at: (575) 200-4227</li>
-								<li>Or Order Online</li>
+								<li>OR: (575) 941-0282</li>
+								<!--<li>Or Order Online</li>-->
 							</ul>
 						</div>
 						<div class="article col-xs-12 col-sm-4">
@@ -225,7 +228,7 @@
 							<!-- CONTACT OPTION 2 START -->
 							<div class="option col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1">
 								<div class="media">
-									<i class="pull-left ion-ios7-location-outline fa-2x text-muted"></i>
+									<i class="pull-left ion-ios-location fa-2x text-muted"></i>
 									<div class="media-body">
 										<address>
 											<strong>Thunder Run Quarry.</strong><br>
@@ -235,15 +238,23 @@
 									</div>
 								</div>
 								<div class="media">
-									<i class="pull-left ion-ios7-telephone-outline fa-2x text-muted"></i>
+									<i class="pull-left ion-android-call fa-2x text-muted"></i>
 									<div class="media-body">
 										(575) 200-4227
+										<br>
+										(575) 941-0282
 									</div>
 								</div>
 								<div class="media">
-									<i class="pull-left ion-ios7-email-outline fa-2x text-muted"></i>
+									<i class="pull-left ion-email fa-2x text-muted"></i>
 									<div class="media-body">
 										<a>info@thunderrun.rocks</a>
+									</div>
+								</div>
+								<div class="media">
+									<i class="pull-left ion-social-usd fa-2x text-muted"></i>
+									<div class="media-body">
+										<a target="_new" href="https://secure.jhcc.info/#/forms/dJ9xDoXuc9?action=fill">Credit Application</a>
 									</div>
 								</div>
 								<!-- <div class="media">
