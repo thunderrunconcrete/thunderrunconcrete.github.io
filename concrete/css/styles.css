@@ -216,7 +216,7 @@ a:hover {
 #header {
 	overflow: hidden;
 	height: auto;
-	background: url('../images/home.jpg') fixed no-repeat;
+	background: url('../images/home.png') fixed no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -290,7 +290,7 @@ a:hover {
 /* START: SERVICES SECTION*/
 #services {
 	height: auto;
-	background: url('../images/services.jpg') no-repeat;
+	background: url('../images/services.png') no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -384,7 +384,7 @@ a:hover {
 /* START: CLIENTS SECTION*/
 #clients {
 	height: auto;
-	background: url('../images/clients.jpg') no-repeat;
+	background: url('../images/clients.png') no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
