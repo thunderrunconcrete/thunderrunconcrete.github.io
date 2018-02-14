@@ -27,25 +27,25 @@ angular.module('simpleSite', [])
 	.controller('MaterialCtrl', function($http, $scope, config) {
 		$scope.list = [
 			{
-				"image": "images/1.jpg",
+				//"image": "images/1.jpg",
 				"title":"NM DOT Spec BC - 3/4 Minus"
 			},{
-				"image": "images/2.jpg",
+				//"image": "images/2.jpg",
 				"title":"Crushed Fines"
 			},{
-				"image": "images/3.jpg",
+				//"image": "images/3.jpg",
 				"title":"3/8 Road Chat"
 			},{
-				"image": "images/4.jpg",
+				//"image": "images/4.jpg",
 				"title":"3/4 Screenings (Light)"
 			},{
-				"image": "images/5.jpg",
+				//"image": "images/5.jpg",
 				"title":"Rip Rap 4\" - 8\""
 			},{
-				"image": "images/6.jpg",
+				//"image": "images/6.jpg",
 				"title":"3/4 Screenings (Dark)"
 			},{
-				"image": "images/7.jpg",
+				//"image": "images/7.jpg",
 				"title":"Rip Rap 18\" - 36\""
 			}
 		]
